@@ -3,65 +3,63 @@ package controllers
 import (
 	"log"
 	"net/http"
-
 	"todo_app/app/models"
 )
 
 func signup(w http.ResponseWriter, r *http.Request) {
-
 	if r.Method == "GET" {
-
-		_, err := session(w, r)
-		if err != nil {
+		if _, err := session(w, r); err != nil {
 			generateHTML(w, nil, "layout", "public_navbar", "signup")
 		} else {
-			http.Redirect(w, r, "/todos", 302)
+			http.Redirect(w, r, "/todos", http.StatusFound) // 302
+		}
+	} else if r.Method == "POST" {
+		if err := r.ParseForm(); err != nil {
+			log.Println("Error parsing form:", err)
 		}
 
-	} else if r.Method == "POST" {
-		err := r.ParseForm()
-		if err != nil {
-			log.Println(err)
-		}
 		user := models.User{
 			Name:     r.PostFormValue("name"),
 			Email:    r.PostFormValue("email"),
 			PassWord: r.PostFormValue("password"),
 		}
+
 		if err := user.CreateUser(); err != nil {
-			log.Println(err)
+			log.Println("Error creating user:", err)
 		}
 
-		http.Redirect(w, r, "/", 302)
+		http.Redirect(w, r, "/", http.StatusFound) // 302
 	}
-
 }
 
 func login(w http.ResponseWriter, r *http.Request) {
-	_, err := session(w, r)
-	if err != nil {
+	if _, err := session(w, r); err != nil {
 		generateHTML(w, nil, "layout", "public_navbar", "login")
 	} else {
-		http.Redirect(w, r, "/todos", 302)
+		http.Redirect(w, r, "/todos", http.StatusFound) // 302
 	}
-
 }
 
 func authenticate(w http.ResponseWriter, r *http.Request) {
-	err := r.ParseForm()
+	if err := r.ParseForm(); err != nil {
+		log.Println("Error parsing form:", err)
+		http.Redirect(w, r, "/login", http.StatusFound) // 302
+		return
+	}
 
 	user, err := models.GetUserByEmail(r.PostFormValue("email"))
-
 	if err != nil {
-		log.Println(err) // エラー内容をログに出力
-		http.Redirect(w, r, "/login", 302)
-		return // ここで関数を終了する必要があります
+		log.Println("Error getting user by email:", err)
+		http.Redirect(w, r, "/login", http.StatusFound) // 302
+		return
 	}
 
 	if user.PassWord == models.Encrypt(r.PostFormValue("password")) {
 		session, err := user.CreateSession()
 		if err != nil {
-			log.Fatalln()
+			log.Println("Error creating session:", err)
+			http.Redirect(w, r, "/login", http.StatusFound) // 302
+			return
 		}
 
 		cookie := http.Cookie{
@@ -71,24 +69,24 @@ func authenticate(w http.ResponseWriter, r *http.Request) {
 		}
 		http.SetCookie(w, &cookie)
 
-		http.Redirect(w, r, "/", 302)
+		http.Redirect(w, r, "/todos", http.StatusFound) // 302
 	} else {
-		http.Redirect(w, r, "/login", 302)
+		http.Redirect(w, r, "/login", http.StatusFound) // 302
 	}
-
 }
 
 func logout(w http.ResponseWriter, r *http.Request) {
-
 	cookie, err := r.Cookie("_cookie")
-	if err != nil {
-		log.Println(err)
+	if err != nil && err != http.ErrNoCookie {
+		log.Println("Error retrieving cookie:", err)
 	}
 
-	if err != http.ErrNoCookie {
+	if err == nil {
 		session := models.Session{UUID: cookie.Value}
-		session.DeleteSessionByUUID()
+		if err := session.DeleteSessionByUUID(); err != nil {
+			log.Println("Error deleting session:", err)
+		}
 	}
 
-	http.Redirect(w, r, "/login", 302)
+	http.Redirect(w, r, "/login", http.StatusFound) // 302
 }
