@@ -1,0 +1,2291 @@
+2024/07/08 11:55:43 main.go:14: test
+2024/08/22 22:16:56 main.go:14: test
+2024/08/23 14:36:07 users.go:61: near "where": syntax error
+2024/08/23 14:36:22 users.go:61: near "where": syntax error
+2024/08/25 11:26:04 todos.go:27: near "value": syntax error
+2024/08/25 11:27:44 todos.go:27: near "value": syntax error
+2024/08/25 11:28:27 todos.go:27: table todos has no column named create_at
+2024/08/25 13:00:15 users.go:61: near "where": syntax error
+2024/08/25 15:44:43 todos.go:47: no such column: id
+2024/08/25 15:45:15 todos.go:47: no such column: id
+2024/08/25 15:51:40 todos.go:47: no such column: id
+2024/08/25 15:52:12 todos.go:47: no such column: id
+2024/08/25 15:53:18 todos.go:47: no such column: id
+2024/08/25 15:54:23 todos.go:47: no such column: createdat
+2024/08/25 15:55:59 todos.go:47: no such column: todos
+2024/08/26 11:02:34 server.go:3413: http: panic serving [::1]:55370: runtime error: invalid memory address or nil pointer dereference
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x346c820?, 0x3706750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x34c55c8, 0xc000192000}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x34c7468, 0xc000192000}, 0xc0000ebb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:10 +0x85
+net/http.HandlerFunc.ServeHTTP(0x371a2a0?, {0x34c7468?, 0xc000192000?}, 0x3369c5a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x30c9bd9?, {0x34c7468, 0xc000192000}, 0xc000184000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000180030?}, {0x34c7468?, 0xc000192000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00011e000, {0x34c7b30, 0xc0000a7260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 11:02:35 server.go:3413: http: panic serving [::1]:55371: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x346c820?, 0x3706750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x34c55c8, 0xc0001921c0}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x34c7468, 0xc0001921c0}, 0xc00006ab30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:10 +0x85
+net/http.HandlerFunc.ServeHTTP(0x371a2a0?, {0x34c7468?, 0xc0001921c0?}, 0x3369c5a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x30c9bd9?, {0x34c7468, 0xc0001921c0}, 0xc0000d86c0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a73b0?}, {0x34c7468?, 0xc0001921c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00011e090, {0x34c7b30, 0xc0000a7260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 11:02:35 server.go:3413: http: panic serving [::1]:55377: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x346c820?, 0x3706750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x34c55c8, 0xc000192380}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x34c7468, 0xc000192380}, 0xc00021ab30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:10 +0x85
+net/http.HandlerFunc.ServeHTTP(0x371a2a0?, {0x34c7468?, 0xc000192380?}, 0x3369c5a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x30c9bd9?, {0x34c7468, 0xc000192380}, 0xc00022a000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000204090?}, {0x34c7468?, 0xc000192380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000208000, {0x34c7b30, 0xc0000a7260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 11:02:35 server.go:3413: http: panic serving [::1]:55378: runtime error: invalid memory address or nil pointer dereference
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x346c820?, 0x3706750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x34c55c8, 0xc000192540}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x34c7468, 0xc000192540}, 0xc00021ab30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:10 +0x85
+net/http.HandlerFunc.ServeHTTP(0x371a2a0?, {0x34c7468?, 0xc000192540?}, 0x3369c5a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x30c9bd9?, {0x34c7468, 0xc000192540}, 0xc000184480)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000180420?}, {0x34c7468?, 0xc000192540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000186360, {0x34c7b30, 0xc0000a7260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:07:38 server.go:3413: http: panic serving [::1]:56710: runtime error: invalid memory address or nil pointer dereference
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1a087c0?, 0x1ca2750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x1a61578, 0xc000236000}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x1a63348, 0xc000236000}, 0xc000163b30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x1cb6280?, {0x1a63348?, 0xc000236000?}, 0x1905b9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1665bd9?, {0x1a63348, 0xc000236000}, 0xc000218000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00020a030?}, {0x1a63348?, 0xc000236000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00018e000, {0x1a63a10, 0xc00011f230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:07:39 server.go:3413: http: panic serving [::1]:56711: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1a087c0?, 0x1ca2750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x1a61578, 0xc0002361c0}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x1a63348, 0xc0002361c0}, 0xc00006ab30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x1cb6280?, {0x1a63348?, 0xc0002361c0?}, 0x1905b9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1665bd9?, {0x1a63348, 0xc0002361c0}, 0xc0001506c0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00011f380?}, {0x1a63348?, 0xc0002361c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00018e090, {0x1a63a10, 0xc00011f230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:07:39 server.go:3413: http: panic serving [::1]:56712: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1a087c0?, 0x1ca2750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x1a61578, 0xc000236380}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x1a63348, 0xc000236380}, 0xc00006bb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x1cb6280?, {0x1a63348?, 0xc000236380?}, 0x1905b9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1665bd9?, {0x1a63348, 0xc000236380}, 0xc0001507e0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00011f470?}, {0x1a63348?, 0xc000236380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00018e120, {0x1a63a10, 0xc00011f230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:07:39 server.go:3413: http: panic serving [::1]:56713: runtime error: invalid memory address or nil pointer dereference
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1a087c0?, 0x1ca2750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x1a61578, 0xc000236540}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x1a63348, 0xc000236540}, 0xc00006bb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x1cb6280?, {0x1a63348?, 0xc000236540?}, 0x1905b9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1665bd9?, {0x1a63348, 0xc000236540}, 0xc0002185a0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00020a420?}, {0x1a63348?, 0xc000236540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00021a360, {0x1a63a10, 0xc00011f230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:07:40 server.go:3413: http: panic serving [::1]:56714: runtime error: invalid memory address or nil pointer dereference
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1a087c0?, 0x1ca2750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x1a61578, 0xc000236700}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x1a63348, 0xc000236700}, 0xc00006bb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x1cb6280?, {0x1a63348?, 0xc000236700?}, 0x1905b9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1665bd9?, {0x1a63348, 0xc000236700}, 0xc0002186c0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00020a5a0?}, {0x1a63348?, 0xc000236700?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00021a510, {0x1a63a10, 0xc00011f230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:07:50 server.go:3413: http: panic serving [::1]:56731: runtime error: invalid memory address or nil pointer dereference
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x20167c0?, 0x22b0750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x206f578, 0xc0001ae000}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x2071348, 0xc0001ae000}, 0xc00012db30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x22c4280?, {0x2071348?, 0xc0001ae000?}, 0x1f13b9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1c73bd9?, {0x2071348, 0xc0001ae000}, 0xc000190000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000182030?}, {0x2071348?, 0xc0001ae000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000154000, {0x2071a10, 0xc000101230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:07:51 server.go:3413: http: panic serving [::1]:56732: runtime error: invalid memory address or nil pointer dereference
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x20167c0?, 0x22b0750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x206f578, 0xc0001ae1c0}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x2071348, 0xc0001ae1c0}, 0xc00006fb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x22c4280?, {0x2071348?, 0xc0001ae1c0?}, 0x1f13b9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1c73bd9?, {0x2071348, 0xc0001ae1c0}, 0xc00011c6c0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000101380?}, {0x2071348?, 0xc0001ae1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000154090, {0x2071a10, 0xc000101230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:07:51 server.go:3413: http: panic serving [::1]:56733: runtime error: invalid memory address or nil pointer dereference
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x20167c0?, 0x22b0750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x206f578, 0xc0001ae380}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x2071348, 0xc0001ae380}, 0xc0000bcb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x22c4280?, {0x2071348?, 0xc0001ae380?}, 0x1f13b9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1c73bd9?, {0x2071348, 0xc0001ae380}, 0xc0000ca000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000b0090?}, {0x2071348?, 0xc0001ae380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000b4000, {0x2071a10, 0xc000101230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:07:51 server.go:3413: http: panic serving [::1]:56734: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x20167c0?, 0x22b0750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x206f578, 0xc0001ae540}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x2071348, 0xc0001ae540}, 0xc0000bcb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x22c4280?, {0x2071348?, 0xc0001ae540?}, 0x1f13b9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1c73bd9?, {0x2071348, 0xc0001ae540}, 0xc000190240)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000182420?}, {0x2071348?, 0xc0001ae540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000192360, {0x2071a10, 0xc000101230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:07:56 server.go:3413: http: panic serving [::1]:56735: runtime error: invalid memory address or nil pointer dereference
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x20167c0?, 0x22b0750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x206f578, 0xc0001ae700}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x2071348, 0xc0001ae700}, 0xc0000bcb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x22c4280?, {0x2071348?, 0xc0001ae700?}, 0x1f13b9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1c73bd9?, {0x2071348, 0xc0001ae700}, 0xc000190360)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001825a0?}, {0x2071348?, 0xc0001ae700?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000192510, {0x2071a10, 0xc000101230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:08:26 server.go:3413: http: panic serving [::1]:56736: runtime error: invalid memory address or nil pointer dereference
+goroutine 25 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x20167c0?, 0x22b0750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x206f578, 0xc0000de000}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x2071348, 0xc0000de000}, 0xc0000b8b30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x22c4280?, {0x2071348?, 0xc0000de000?}, 0x1f13b9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1c73bd9?, {0x2071348, 0xc0000de000}, 0xc000228000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000222030?}, {0x2071348?, 0xc0000de000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001926c0, {0x2071a10, 0xc000101230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:08:26 server.go:3413: http: panic serving [::1]:56737: runtime error: invalid memory address or nil pointer dereference
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x20167c0?, 0x22b0750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x206f578, 0xc0000de1c0}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x2071348, 0xc0000de1c0}, 0xc0000b9b30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x22c4280?, {0x2071348?, 0xc0000de1c0?}, 0x1f13b9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1c73bd9?, {0x2071348, 0xc0000de1c0}, 0xc000228120)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000222090?}, {0x2071348?, 0xc0000de1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000192750, {0x2071a10, 0xc000101230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:08:26 server.go:3413: http: panic serving [::1]:56741: runtime error: invalid memory address or nil pointer dereference
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x20167c0?, 0x22b0750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x206f578, 0xc0001ae8c0}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x2071348, 0xc0001ae8c0}, 0xc0000bcb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x22c4280?, {0x2071348?, 0xc0001ae8c0?}, 0x1f13b9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1c73bd9?, {0x2071348, 0xc0001ae8c0}, 0xc000190480)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001827e0?}, {0x2071348?, 0xc0001ae8c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001927e0, {0x2071a10, 0xc000101230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:13:40 server.go:3413: http: panic serving [::1]:56770: runtime error: invalid memory address or nil pointer dereference
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x63127c0?, 0x65ac750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x636b578, 0xc000142000}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x636d348, 0xc000142000}, 0xc0000f3b30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x65c0280?, {0x636d348?, 0xc000142000?}, 0x620fb9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5f6fbd9?, {0x636d348, 0xc000142000}, 0xc000128000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00011c030?}, {0x636d348?, 0xc000142000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00019e000, {0x636da10, 0xc0000af230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:13:40 server.go:3413: http: panic serving [::1]:56771: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x63127c0?, 0x65ac750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x636b578, 0xc0001421c0}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x636d348, 0xc0001421c0}, 0xc00006ab30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x65c0280?, {0x636d348?, 0xc0001421c0?}, 0x620fb9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5f6fbd9?, {0x636d348, 0xc0001421c0}, 0xc0000e06c0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000af380?}, {0x636d348?, 0xc0001421c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00019e090, {0x636da10, 0xc0000af230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:13:40 server.go:3413: http: panic serving [::1]:56772: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x63127c0?, 0x65ac750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x636b578, 0xc000142380}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x636d348, 0xc000142380}, 0xc00006bb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x65c0280?, {0x636d348?, 0xc000142380?}, 0x620fb9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5f6fbd9?, {0x636d348, 0xc000142380}, 0xc0000e07e0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000af470?}, {0x636d348?, 0xc000142380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00019e120, {0x636da10, 0xc0000af230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:13:40 server.go:3413: http: panic serving [::1]:56773: runtime error: invalid memory address or nil pointer dereference
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x63127c0?, 0x65ac750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x636b578, 0xc000142540}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x636d348, 0xc000142540}, 0xc00006bb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x65c0280?, {0x636d348?, 0xc000142540?}, 0x620fb9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5f6fbd9?, {0x636d348, 0xc000142540}, 0xc000128480)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00011c420?}, {0x636d348?, 0xc000142540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00012a360, {0x636da10, 0xc0000af230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:14:40 server.go:3413: http: panic serving [::1]:56778: runtime error: invalid memory address or nil pointer dereference
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x63127c0?, 0x65ac750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x636b578, 0xc000142700}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x636d348, 0xc000142700}, 0xc00006bb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x65c0280?, {0x636d348?, 0xc000142700?}, 0x620fb9a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5f6fbd9?, {0x636d348, 0xc000142700}, 0xc0001285a0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00011c5a0?}, {0x636d348?, 0xc000142700?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00012a510, {0x636da10, 0xc0000af230})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:15:50 server.go:3413: http: panic serving [::1]:56794: runtime error: invalid memory address or nil pointer dereference
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x177b820?, 0x1a15750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x17d4688, 0xc000238000}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x17d6468, 0xc000238000}, 0xc0000f3b30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x1a292a0?, {0x17d6468?, 0xc000238000?}, 0x1678c5a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x13d8bd9?, {0x17d6468, 0xc000238000}, 0xc00021a000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00020a030?}, {0x17d6468?, 0xc000238000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00019e000, {0x17d6b30, 0xc0000af260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:15:51 server.go:3413: http: panic serving [::1]:56795: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x177b820?, 0x1a15750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x17d4688, 0xc0002381c0}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x17d6468, 0xc0002381c0}, 0xc00006ab30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x1a292a0?, {0x17d6468?, 0xc0002381c0?}, 0x1678c5a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x13d8bd9?, {0x17d6468, 0xc0002381c0}, 0xc0000e06c0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000af3b0?}, {0x17d6468?, 0xc0002381c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00019e090, {0x17d6b30, 0xc0000af260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:15:51 server.go:3413: http: panic serving [::1]:56797: runtime error: invalid memory address or nil pointer dereference
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x177b820?, 0x1a15750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x17d4688, 0xc000238380}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x17d6468, 0xc000238380}, 0xc00006bb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x1a292a0?, {0x17d6468?, 0xc000238380?}, 0x1678c5a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x13d8bd9?, {0x17d6468, 0xc000238380}, 0xc0000e07e0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000af4a0?}, {0x17d6468?, 0xc000238380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00019e120, {0x17d6b30, 0xc0000af260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 18:15:51 server.go:3413: http: panic serving [::1]:56798: runtime error: invalid memory address or nil pointer dereference
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x177b820?, 0x1a15750?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.(*Template).escape(0x0)
+	/usr/local/go/src/html/template/template.go:97 +0x29
+html/template.(*Template).Execute(0x0, {0x17d4688, 0xc000238540}, {0x0, 0x0})
+	/usr/local/go/src/html/template/template.go:121 +0x2c
+todo_app/app/controllers.top({0x17d6468, 0xc000238540}, 0xc00006bb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:20 +0x85
+net/http.HandlerFunc.ServeHTTP(0x1a292a0?, {0x17d6468?, 0xc000238540?}, 0x1678c5a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x13d8bd9?, {0x17d6468, 0xc000238540}, 0xc00021a360)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00020a420?}, {0x17d6468?, 0xc000238540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00021c360, {0x17d6b30, 0xc0000af260})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 21:34:58 server.go:3413: http: panic serving [::1]:57430: template: layout.html:21: unexpected EOF
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x55688c0?, 0xc000016120?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x55cb488, 0xc000212000}, {0x0, 0x0}, {0xc000163aa8?, 0x0?, 0x526d280?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:16 +0x23a
+todo_app/app/controllers.signup({0x55cb488?, 0xc000212000?}, 0xc000163b30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0x87
+net/http.HandlerFunc.ServeHTTP(0x581e2a0?, {0x55cb488?, 0xc000212000?}, 0x540a01a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x51cdbd9?, {0x55cb488, 0xc000212000}, 0xc000206000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00007e030?}, {0x55cb488?, 0xc000212000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00018e000, {0x55cbb28, 0xc000121290})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 21:34:59 server.go:3413: http: panic serving [::1]:57431: template: layout.html:21: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x55688c0?, 0xc000016200?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x55cb488, 0xc0002121c0}, {0x0, 0x0}, {0xc00006aaa8?, 0x0?, 0x526d280?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:16 +0x23a
+todo_app/app/controllers.signup({0x55cb488?, 0xc0002121c0?}, 0xc00006ab30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0x87
+net/http.HandlerFunc.ServeHTTP(0x581e2a0?, {0x55cb488?, 0xc0002121c0?}, 0x540a01a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x51cdbd9?, {0x55cb488, 0xc0002121c0}, 0xc0001526c0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001213e0?}, {0x55cb488?, 0xc0002121c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00018e090, {0x55cbb28, 0xc000121290})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 21:34:59 server.go:3413: http: panic serving [::1]:57432: template: layout.html:21: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x55688c0?, 0xc0000162e0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x55cb488, 0xc000212380}, {0x0, 0x0}, {0xc00006baa8?, 0x0?, 0x526d280?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:16 +0x23a
+todo_app/app/controllers.signup({0x55cb488?, 0xc000212380?}, 0xc00006bb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0x87
+net/http.HandlerFunc.ServeHTTP(0x581e2a0?, {0x55cb488?, 0xc000212380?}, 0x540a01a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x51cdbd9?, {0x55cb488, 0xc000212380}, 0xc0001527e0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001214d0?}, {0x55cb488?, 0xc000212380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00018e120, {0x55cbb28, 0xc000121290})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 21:34:59 server.go:3413: http: panic serving [::1]:57433: template: layout.html:21: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x55688c0?, 0xc0000163d0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x55cb488, 0xc000212540}, {0x0, 0x0}, {0xc00006baa8?, 0x0?, 0x526d280?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:16 +0x23a
+todo_app/app/controllers.signup({0x55cb488?, 0xc000212540?}, 0xc00006bb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0x87
+net/http.HandlerFunc.ServeHTTP(0x581e2a0?, {0x55cb488?, 0xc000212540?}, 0x540a01a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x51cdbd9?, {0x55cb488, 0xc000212540}, 0xc000206b40)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00007ec90?}, {0x55cb488?, 0xc000212540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000208360, {0x55cbb28, 0xc000121290})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 21:35:04 server.go:3413: http: panic serving [::1]:57434: template: layout.html:21: unexpected EOF
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x55688c0?, 0xc00011c3e0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x55cb488, 0xc0001882a0}, {0x0, 0x0}, {0xc00006caa8?, 0x0?, 0x526d280?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:16 +0x23a
+todo_app/app/controllers.signup({0x55cb488?, 0xc0001882a0?}, 0xc00006cb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0x87
+net/http.HandlerFunc.ServeHTTP(0x581e2a0?, {0x55cb488?, 0xc0001882a0?}, 0x540a01a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x51cdbd9?, {0x55cb488, 0xc0001882a0}, 0xc000152900)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000121590?}, {0x55cb488?, 0xc0001882a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00018e1b0, {0x55cbb28, 0xc000121290})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 21:36:32 server.go:3413: http: panic serving [::1]:57473: template: layout.html:21: unexpected EOF
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x62598c0?, 0xc000016120?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x62bc488, 0xc000212000}, {0x0, 0x0}, {0xc00016baa8?, 0x0?, 0x5f5e280?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:16 +0x23a
+todo_app/app/controllers.signup({0x62bc488?, 0xc000212000?}, 0xc00016bb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0x87
+net/http.HandlerFunc.ServeHTTP(0x650f2a0?, {0x62bc488?, 0xc000212000?}, 0x60fb01a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5ebebd9?, {0x62bc488, 0xc000212000}, 0xc000204000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00007e030?}, {0x62bc488?, 0xc000212000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000196000, {0x62bcb28, 0xc000127290})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 21:36:33 server.go:3413: http: panic serving [::1]:57474: template: layout.html:21: unexpected EOF
+goroutine 20 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x62598c0?, 0xc000016200?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x62bc488, 0xc0002121c0}, {0x0, 0x0}, {0xc00006aaa8?, 0x0?, 0x5f5e280?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:16 +0x23a
+todo_app/app/controllers.signup({0x62bc488?, 0xc0002121c0?}, 0xc00006ab30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0x87
+net/http.HandlerFunc.ServeHTTP(0x650f2a0?, {0x62bc488?, 0xc0002121c0?}, 0x60fb01a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5ebebd9?, {0x62bc488, 0xc0002121c0}, 0xc0001586c0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001273e0?}, {0x62bc488?, 0xc0002121c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000196090, {0x62bcb28, 0xc000127290})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 21:36:33 server.go:3413: http: panic serving [::1]:57475: template: layout.html:21: unexpected EOF
+goroutine 34 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x62598c0?, 0xc0000162e0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x62bc488, 0xc000212380}, {0x0, 0x0}, {0xc00029aaa8?, 0x0?, 0x5f5e280?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:16 +0x23a
+todo_app/app/controllers.signup({0x62bc488?, 0xc000212380?}, 0xc00029ab30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0x87
+net/http.HandlerFunc.ServeHTTP(0x650f2a0?, {0x62bc488?, 0xc000212380?}, 0x60fb01a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5ebebd9?, {0x62bc488, 0xc000212380}, 0xc0002aa000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000284090?}, {0x62bc488?, 0xc000212380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000288000, {0x62bcb28, 0xc000127290})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 21:36:33 server.go:3413: http: panic serving [::1]:57476: template: layout.html:21: unexpected EOF
+goroutine 8 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x62598c0?, 0xc0000163d0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x62bc488, 0xc000212540}, {0x0, 0x0}, {0xc00029aaa8?, 0x0?, 0x5f5e280?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:16 +0x23a
+todo_app/app/controllers.signup({0x62bc488?, 0xc000212540?}, 0xc00029ab30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_auth.go:6 +0x87
+net/http.HandlerFunc.ServeHTTP(0x650f2a0?, {0x62bc488?, 0xc000212540?}, 0x60fb01a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5ebebd9?, {0x62bc488, 0xc000212540}, 0xc000204900)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00007ec90?}, {0x62bc488?, 0xc000212540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000206360, {0x62bcb28, 0xc000127290})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 21:36:36 server.go:3413: http: panic serving [::1]:57477: template: layout.html:21: unexpected EOF
+goroutine 10 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x62598c0?, 0xc0000164b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x62bc488, 0xc0002127e0}, {0x6244ac0, 0x62b8498}, {0xc00029aab8?, 0xc000216300?, 0xc00029aaa0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:16 +0x23a
+todo_app/app/controllers.top({0x62bc488?, 0xc0002127e0?}, 0xc00029ab30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x650f2a0?, {0x62bc488?, 0xc0002127e0?}, 0x60fb01a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5ebebd9?, {0x62bc488, 0xc0002127e0}, 0xc000204c60)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00007f0e0?}, {0x62bc488?, 0xc0002127e0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000206510, {0x62bcb28, 0xc000127290})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 21:36:37 server.go:3413: http: panic serving [::1]:57478: template: layout.html:21: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x62598c0?, 0xc000016580?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x62bc488, 0xc0002129a0}, {0x6244ac0, 0x62b8498}, {0xc00006bab8?, 0xc000164300?, 0xc00006baa0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:16 +0x23a
+todo_app/app/controllers.top({0x62bc488?, 0xc0002129a0?}, 0xc00006bb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x650f2a0?, {0x62bc488?, 0xc0002129a0?}, 0x60fb01a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5ebebd9?, {0x62bc488, 0xc0002129a0}, 0xc0001587e0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001274d0?}, {0x62bc488?, 0xc0002129a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000196120, {0x62bcb28, 0xc000127290})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/26 21:36:37 server.go:3413: http: panic serving [::1]:57479: template: layout.html:21: unexpected EOF
+goroutine 35 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x62598c0?, 0xc000016660?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x62bc488, 0xc000212b60}, {0x6244ac0, 0x62b8498}, {0xc00029bab8?, 0xc000282080?, 0xc00029baa0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:16 +0x23a
+todo_app/app/controllers.top({0x62bc488?, 0xc000212b60?}, 0xc00029bb30?)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:8 +0x6f
+net/http.HandlerFunc.ServeHTTP(0x650f2a0?, {0x62bc488?, 0xc000212b60?}, 0x60fb01a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x5ebebd9?, {0x62bc488, 0xc000212b60}, 0xc0002aa120)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000284150?}, {0x62bc488?, 0xc000212b60?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000288090, {0x62bcb28, 0xc000127290})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/28 11:48:55 users.go:106: 5 values for 4 columns
+2024/08/28 12:25:33 route_auth.go:48: 
+2024/08/28 12:27:03 route_auth.go:45: 
+2024/08/28 12:30:44 route_auth.go:45: sql: no rows in result set
+2024/08/29 08:13:46 users.go:153: near "*": syntax error
+2024/08/29 08:42:19 server.go:3413: http: panic serving [::1]:49632: template: index.html:14: unexpected EOF
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1015000e0?, 0xc000016910?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10156a100, 0xc0001748c0}, {0x0, 0x0}, {0xc000031aa8?, 0x1?, 0x1?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10156a100, 0xc0001748c0}, 0xc00012d8c0)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:22 +0x14d
+net/http.HandlerFunc.ServeHTTP(0x1017e83e0?, {0x10156a100?, 0xc0001748c0?}, 0x10123103a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100ff3d59?, {0x10156a100, 0xc0001748c0}, 0xc00012d8c0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001d9710?}, {0x10156a100?, 0xc0001748c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000198630, {0x10156a820, 0xc00007f440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:42:19 server.go:3413: http: panic serving [::1]:49648: template: index.html:14: unexpected EOF
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1015000e0?, 0xc000016ab0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10156a100, 0xc000174a80}, {0x0, 0x0}, {0xc000143aa8?, 0x1?, 0x1?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10156a100, 0xc000174a80}, 0xc0001fa240)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:22 +0x14d
+net/http.HandlerFunc.ServeHTTP(0x1017e83e0?, {0x10156a100?, 0xc000174a80?}, 0x10123103a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100ff3d59?, {0x10156a100, 0xc000174a80}, 0xc0001fa240)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001f12c0?}, {0x10156a100?, 0xc000174a80?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000198990, {0x10156a820, 0xc00007f440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:42:19 server.go:3413: http: panic serving [::1]:49649: template: index.html:14: unexpected EOF
+goroutine 13 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1015000e0?, 0xc000016c60?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10156a100, 0xc000174c40}, {0x0, 0x0}, {0xc000143aa8?, 0x1?, 0x1?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10156a100, 0xc000174c40}, 0xc0002226c0)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:22 +0x14d
+net/http.HandlerFunc.ServeHTTP(0x1017e83e0?, {0x10156a100?, 0xc000174c40?}, 0x10123103a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100ff3d59?, {0x10156a100, 0xc000174c40}, 0xc0002226c0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000209320?}, {0x10156a100?, 0xc000174c40?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00015e900, {0x10156a820, 0xc00007f440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:42:20 server.go:3413: http: panic serving [::1]:49650: template: index.html:14: unexpected EOF
+goroutine 15 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1015000e0?, 0xc000016e10?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10156a100, 0xc000174e00}, {0x0, 0x0}, {0xc000143aa8?, 0x1?, 0x1?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10156a100, 0xc000174e00}, 0xc000222ea0)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:22 +0x14d
+net/http.HandlerFunc.ServeHTTP(0x1017e83e0?, {0x10156a100?, 0xc000174e00?}, 0x10123103a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100ff3d59?, {0x10156a100, 0xc000174e00}, 0xc000222ea0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002099e0?}, {0x10156a100?, 0xc000174e00?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00015eb40, {0x10156a820, 0xc00007f440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:42:24 server.go:3413: http: panic serving [::1]:49651: template: index.html:14: unexpected EOF
+goroutine 32 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1015000e0?, 0xc000310140?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10156a100, 0xc000175260}, {0x0, 0x0}, {0xc000143aa8?, 0x1?, 0x1?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10156a100, 0xc000175260}, 0xc000223560)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:22 +0x14d
+net/http.HandlerFunc.ServeHTTP(0x1017e83e0?, {0x10156a100?, 0xc000175260?}, 0x10123103a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100ff3d59?, {0x10156a100, 0xc000175260}, 0xc000223560)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002a0900?}, {0x10156a100?, 0xc000175260?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000a5170, {0x10156a820, 0xc00007f440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:42:24 server.go:3413: http: panic serving [::1]:49652: template: index.html:14: unexpected EOF
+goroutine 66 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1015000e0?, 0xc0003102f0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10156a100, 0xc0003481c0}, {0x0, 0x0}, {0xc000143aa8?, 0x1?, 0x1?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10156a100, 0xc0003481c0}, 0xc0003205a0)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:22 +0x14d
+net/http.HandlerFunc.ServeHTTP(0x1017e83e0?, {0x10156a100?, 0xc0003481c0?}, 0x10123103a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100ff3d59?, {0x10156a100, 0xc0003481c0}, 0xc0003205a0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0003005a0?}, {0x10156a100?, 0xc0003481c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000308090, {0x10156a820, 0xc00007f440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:42:26 server.go:3413: http: panic serving [::1]:49655: template: index.html:14: unexpected EOF
+goroutine 68 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1015000e0?, 0xc0003106e0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10156a100, 0xc000348540}, {0x0, 0x0}, {0xc000143aa8?, 0x1?, 0x1?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10156a100, 0xc000348540}, 0xc000320fc0)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:22 +0x14d
+net/http.HandlerFunc.ServeHTTP(0x1017e83e0?, {0x10156a100?, 0xc000348540?}, 0x10123103a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100ff3d59?, {0x10156a100, 0xc000348540}, 0xc000320fc0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000300c60?}, {0x10156a100?, 0xc000348540?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0003082d0, {0x10156a820, 0xc00007f440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:42:26 server.go:3413: http: panic serving [::1]:49656: template: index.html:14: unexpected EOF
+goroutine 43 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1015000e0?, 0xc00018ace0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10156a100, 0xc0001b28c0}, {0x0, 0x0}, {0xc00013daa8?, 0x1?, 0x1?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10156a100, 0xc0001b28c0}, 0xc0001fa360)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:22 +0x14d
+net/http.HandlerFunc.ServeHTTP(0x1017e83e0?, {0x10156a100?, 0xc0001b28c0?}, 0x10123103a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100ff3d59?, {0x10156a100, 0xc0001b28c0}, 0xc0001fa360)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001f1380?}, {0x10156a100?, 0xc0001b28c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000198a20, {0x10156a820, 0xc00007f440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:42:26 server.go:3413: http: panic serving [::1]:49657: template: index.html:14: unexpected EOF
+goroutine 45 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1015000e0?, 0xc00018ae90?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10156a100, 0xc0001b2a80}, {0x0, 0x0}, {0xc00013daa8?, 0x1?, 0x1?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10156a100, 0xc0001b2a80}, 0xc0001fab40)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:22 +0x14d
+net/http.HandlerFunc.ServeHTTP(0x1017e83e0?, {0x10156a100?, 0xc0001b2a80?}, 0x10123103a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100ff3d59?, {0x10156a100, 0xc0001b2a80}, 0xc0001fab40)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001f1a40?}, {0x10156a100?, 0xc0001b2a80?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000198c60, {0x10156a820, 0xc00007f440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:42:27 server.go:3413: http: panic serving [::1]:49658: template: index.html:14: unexpected EOF
+goroutine 47 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1015000e0?, 0xc00018b040?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10156a100, 0xc0001b2c40}, {0x0, 0x0}, {0xc00013daa8?, 0x1?, 0x1?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10156a100, 0xc0001b2c40}, 0xc0001fb200)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:22 +0x14d
+net/http.HandlerFunc.ServeHTTP(0x1017e83e0?, {0x10156a100?, 0xc0001b2c40?}, 0x10123103a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x100ff3d59?, {0x10156a100, 0xc0001b2c40}, 0xc0001fb200)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0003a4180?}, {0x10156a100?, 0xc0001b2c40?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000198ea0, {0x10156a820, 0xc00007f440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:45:44 route_main.go:25: sql: no rows in result set
+2024/08/29 08:45:44 server.go:3413: http: panic serving [::1]:49706: template: index.html:14: unexpected EOF
+goroutine 21 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x102922100?, 0xc000192200?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10298c140, 0xc0001b8000}, {0x0, 0x0}, {0xc000031a10?, 0x0?, 0x0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10298c140, 0xc0001b8000}, 0xc00019c000)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x366
+net/http.HandlerFunc.ServeHTTP(0x102c0a3e0?, {0x10298c140?, 0xc0001b8000?}, 0x1026527da?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1024154f9?, {0x10298c140, 0xc0001b8000}, 0xc00019c000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00018e030?}, {0x10298c140?, 0xc0001b8000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000116090, {0x10298c860, 0xc0000ad440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:45:45 route_main.go:25: sql: no rows in result set
+2024/08/29 08:45:45 server.go:3413: http: panic serving [::1]:49707: template: index.html:14: unexpected EOF
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x102922100?, 0xc000192400?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10298c140, 0xc0001b8380}, {0x0, 0x0}, {0xc0000eba10?, 0x0?, 0x0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10298c140, 0xc0001b8380}, 0xc0000daa20)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x366
+net/http.HandlerFunc.ServeHTTP(0x102c0a3e0?, {0x10298c140?, 0xc0001b8380?}, 0x1026527da?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1024154f9?, {0x10298c140, 0xc0001b8380}, 0xc0000daa20)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000ad590?}, {0x10298c140?, 0xc0001b8380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000116120, {0x10298c860, 0xc0000ad440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:45:45 route_main.go:25: sql: no rows in result set
+2024/08/29 08:45:45 server.go:3413: http: panic serving [::1]:49708: template: index.html:14: unexpected EOF
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x102922100?, 0xc000192600?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10298c140, 0xc0001b8620}, {0x0, 0x0}, {0xc0000eba10?, 0x0?, 0x0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10298c140, 0xc0001b8620}, 0xc0000dab40)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x366
+net/http.HandlerFunc.ServeHTTP(0x102c0a3e0?, {0x10298c140?, 0xc0001b8620?}, 0x1026527da?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1024154f9?, {0x10298c140, 0xc0001b8620}, 0xc0000dab40)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000ad680?}, {0x10298c140?, 0xc0001b8620?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001161b0, {0x10298c860, 0xc0000ad440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:45:45 route_main.go:25: sql: no rows in result set
+2024/08/29 08:45:45 server.go:3413: http: panic serving [::1]:49709: template: index.html:14: unexpected EOF
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x102922100?, 0xc000192810?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10298c140, 0xc0001b88c0}, {0x0, 0x0}, {0xc0000eba10?, 0x0?, 0x0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10298c140, 0xc0001b88c0}, 0xc00019d680)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x366
+net/http.HandlerFunc.ServeHTTP(0x102c0a3e0?, {0x10298c140?, 0xc0001b88c0?}, 0x1026527da?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1024154f9?, {0x10298c140, 0xc0001b88c0}, 0xc00019d680)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00018f740?}, {0x10298c140?, 0xc0001b88c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001a0870, {0x10298c860, 0xc0000ad440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:45:50 route_main.go:25: sql: no rows in result set
+2024/08/29 08:45:50 server.go:3413: http: panic serving [::1]:49710: template: index.html:14: unexpected EOF
+goroutine 39 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x102922100?, 0xc000192a20?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10298c140, 0xc0001b8b60}, {0x0, 0x0}, {0xc0000eba10?, 0x0?, 0x0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10298c140, 0xc0001b8b60}, 0xc00019dd40)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x366
+net/http.HandlerFunc.ServeHTTP(0x102c0a3e0?, {0x10298c140?, 0xc0001b8b60?}, 0x1026527da?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1024154f9?, {0x10298c140, 0xc0001b8b60}, 0xc00019dd40)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00018ff20?}, {0x10298c140?, 0xc0001b8b60?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001a0bd0, {0x10298c860, 0xc0000ad440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:46:20 route_main.go:25: sql: no rows in result set
+2024/08/29 08:46:20 server.go:3413: http: panic serving [::1]:49711: template: index.html:14: unexpected EOF
+goroutine 41 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x102922100?, 0xc000098600?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10298c140, 0xc00012e620}, {0x0, 0x0}, {0xc0000f1a10?, 0x0?, 0x0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10298c140, 0xc00012e620}, 0xc0000dac60)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x366
+net/http.HandlerFunc.ServeHTTP(0x102c0a3e0?, {0x10298c140?, 0xc00012e620?}, 0x1026527da?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1024154f9?, {0x10298c140, 0xc00012e620}, 0xc0000dac60)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000ad6e0?}, {0x10298c140?, 0xc00012e620?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001a0f30, {0x10298c860, 0xc0000ad440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:46:20 route_main.go:25: sql: no rows in result set
+2024/08/29 08:46:20 server.go:3413: http: panic serving [::1]:49712: template: index.html:14: unexpected EOF
+goroutine 42 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x102922100?, 0xc000098800?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10298c140, 0xc00012e8c0}, {0x0, 0x0}, {0xc0000f1a10?, 0x0?, 0x0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10298c140, 0xc00012e8c0}, 0xc0001fc480)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x366
+net/http.HandlerFunc.ServeHTTP(0x102c0a3e0?, {0x10298c140?, 0xc00012e8c0?}, 0x1026527da?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1024154f9?, {0x10298c140, 0xc00012e8c0}, 0xc0001fc480)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001f67e0?}, {0x10298c140?, 0xc00012e8c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001a0fc0, {0x10298c860, 0xc0000ad440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:46:20 route_main.go:25: sql: no rows in result set
+2024/08/29 08:46:20 server.go:3413: http: panic serving [::1]:49715: template: index.html:14: unexpected EOF
+goroutine 26 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x102922100?, 0xc000098a10?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x10298c140, 0xc00012eb60}, {0x0, 0x0}, {0xc0000f1a10?, 0x0?, 0x0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.index({0x10298c140, 0xc00012eb60}, 0xc0000dbc20)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:29 +0x366
+net/http.HandlerFunc.ServeHTTP(0x102c0a3e0?, {0x10298c140?, 0xc00012eb60?}, 0x1026527da?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1024154f9?, {0x10298c140, 0xc00012eb60}, 0xc0000dbc20)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001626f0?}, {0x10298c140?, 0xc00012eb60?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001167e0, {0x10298c860, 0xc0000ad440})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 08:50:35 route_main.go:25: sql: no rows in result set
+2024/08/29 08:50:35 route_main.go:25: sql: no rows in result set
+2024/08/29 08:50:41 route_main.go:25: sql: no rows in result set
+2024/08/29 08:50:41 route_main.go:25: sql: no rows in result set
+2024/08/29 08:50:42 route_main.go:25: sql: no rows in result set
+2024/08/29 08:50:42 route_main.go:25: sql: no rows in result set
+2024/08/29 08:50:43 route_main.go:25: sql: no rows in result set
+2024/08/29 08:50:43 route_main.go:25: sql: no rows in result set
+2024/08/29 08:50:43 route_main.go:25: sql: no rows in result set
+2024/08/29 08:50:43 route_main.go:25: sql: no rows in result set
+2024/08/29 08:50:43 route_main.go:25: sql: no rows in result set
+2024/08/29 08:50:43 route_main.go:25: sql: no rows in result set
+2024/08/29 08:51:54 route_main.go:25: sql: no rows in result set
+2024/08/29 08:51:54 route_main.go:25: sql: no rows in result set
+2024/08/29 08:51:55 route_main.go:25: sql: no rows in result set
+2024/08/29 08:51:55 route_main.go:25: sql: no rows in result set
+2024/08/29 08:51:56 route_main.go:25: sql: no rows in result set
+2024/08/29 08:51:56 route_main.go:25: sql: no rows in result set
+2024/08/29 08:51:56 route_main.go:25: sql: no rows in result set
+2024/08/29 08:51:56 route_main.go:25: sql: no rows in result set
+2024/08/29 08:52:05 route_main.go:25: sql: no rows in result set
+2024/08/29 08:52:05 route_main.go:25: sql: no rows in result set
+2024/08/29 08:52:14 route_main.go:25: sql: no rows in result set
+2024/08/29 08:52:14 route_main.go:25: sql: no rows in result set
+2024/08/29 08:52:15 route_main.go:25: sql: no rows in result set
+2024/08/29 08:52:15 route_main.go:25: sql: no rows in result set
+2024/08/29 08:52:16 route_main.go:25: sql: no rows in result set
+2024/08/29 08:52:16 route_main.go:25: sql: no rows in result set
+2024/08/29 08:52:17 route_main.go:25: sql: no rows in result set
+2024/08/29 08:52:17 route_main.go:25: sql: no rows in result set
+2024/08/29 08:53:28 route_main.go:25: sql: no rows in result set
+2024/08/29 08:53:28 route_main.go:25: sql: no rows in result set
+2024/08/29 08:57:09 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:09 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:09 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:09 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:09 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:09 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:09 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:09 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:09 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:09 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:10 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:12 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:13 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:13 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:13 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:13 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:13 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:13 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:13 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:13 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:13 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:13 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:14 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:14 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:14 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:14 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:14 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:14 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:14 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:14 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:14 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:14 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:49 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:49 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:49 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:49 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:49 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:49 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:49 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:49 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:49 route_main.go:27: sql: no rows in result set
+2024/08/29 08:57:49 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:11 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:19 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:20 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:21 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:21 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:21 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:21 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:21 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:21 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:21 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:21 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:21 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:21 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:26 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:26 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:26 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:26 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:26 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:26 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:26 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:26 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:26 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:26 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:31 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:31 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:31 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:31 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:31 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:31 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:31 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:31 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:31 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:31 route_main.go:27: sql: no rows in result set
+2024/08/29 08:58:56 route_main.go:25: sql: no rows in result set
+2024/08/29 08:58:56 route_main.go:25: sql: no rows in result set
+2024/08/29 09:23:20 route_main.go:25: sql: no rows in result set
+2024/08/29 09:23:20 route_main.go:25: sql: no rows in result set
+2024/08/29 09:23:22 route_main.go:25: sql: no rows in result set
+2024/08/29 09:23:22 route_main.go:25: sql: no rows in result set
+2024/08/29 09:23:23 route_main.go:25: sql: no rows in result set
+2024/08/29 09:23:23 route_main.go:25: sql: no rows in result set
+2024/08/29 09:23:23 route_main.go:25: sql: no rows in result set
+2024/08/29 09:23:23 route_main.go:25: sql: no rows in result set
+2024/08/29 09:23:24 route_main.go:25: sql: no rows in result set
+2024/08/29 09:23:24 route_main.go:25: sql: no rows in result set
+2024/08/29 09:23:24 route_main.go:25: sql: no rows in result set
+2024/08/29 09:23:24 route_main.go:25: sql: no rows in result set
+2024/08/29 09:23:24 route_main.go:25: sql: no rows in result set
+2024/08/29 09:23:24 route_main.go:25: sql: no rows in result set
+2024/08/29 09:23:25 route_main.go:25: sql: no rows in result set
+2024/08/29 09:23:25 route_main.go:25: sql: no rows in result set
+2024/08/29 09:27:03 users.go:174: No user found with the given ID: 0
+2024/08/29 09:27:03 route_main.go:25: no user found for the session
+2024/08/29 09:27:03 users.go:174: No user found with the given ID: 0
+2024/08/29 09:27:03 route_main.go:25: no user found for the session
+2024/08/29 09:27:04 users.go:174: No user found with the given ID: 0
+2024/08/29 09:27:04 route_main.go:25: no user found for the session
+2024/08/29 09:27:04 users.go:174: No user found with the given ID: 0
+2024/08/29 09:27:04 route_main.go:25: no user found for the session
+2024/08/29 09:27:17 users.go:174: No user found with the given ID: 0
+2024/08/29 09:27:17 route_main.go:25: no user found for the session
+2024/08/29 09:27:17 users.go:174: No user found with the given ID: 0
+2024/08/29 09:27:17 route_main.go:25: no user found for the session
+2024/08/29 09:30:04 users.go:174: No user found with the given ID: 0
+2024/08/29 09:30:04 route_main.go:25: no user found for the session
+2024/08/29 09:30:04 users.go:174: No user found with the given ID: 0
+2024/08/29 09:30:04 route_main.go:25: no user found for the session
+2024/08/29 09:30:17 users.go:174: No user found with the given ID: 0
+2024/08/29 09:30:17 route_main.go:25: no user found for the session
+2024/08/29 09:30:17 users.go:174: No user found with the given ID: 0
+2024/08/29 09:30:17 route_main.go:25: no user found for the session
+2024/08/29 09:31:52 users.go:174: No user found with the given UUID: 2e42c964-6597-11ef-828d-26861e157bca
+2024/08/29 09:31:52 route_main.go:25: no user found for the session
+2024/08/29 09:31:52 users.go:174: No user found with the given UUID: 2e42c964-6597-11ef-828d-26861e157bca
+2024/08/29 09:31:52 route_main.go:25: no user found for the session
+2024/08/29 09:38:58 route_main.go:24: 
+2024/08/29 09:38:58 route_main.go:26: sql: no rows in result set
+2024/08/29 09:38:58 route_main.go:24: 
+2024/08/29 09:38:58 route_main.go:26: sql: no rows in result set
+2024/08/29 09:43:03 users.go:161: Attempting to retrieve user with UserID: 0
+2024/08/29 09:43:03 users.go:174: No user found for UserID: 0
+2024/08/29 09:43:03 route_main.go:24: 
+2024/08/29 09:43:03 route_main.go:26: no user found for the session
+2024/08/29 09:43:03 users.go:161: Attempting to retrieve user with UserID: 0
+2024/08/29 09:43:03 users.go:174: No user found for UserID: 0
+2024/08/29 09:43:03 route_main.go:24: 
+2024/08/29 09:43:03 route_main.go:26: no user found for the session
+2024/08/29 09:44:09 route_main.go:24: 
+2024/08/29 09:44:09 route_main.go:26: sql: no rows in result set
+2024/08/29 09:44:09 route_main.go:24: 
+2024/08/29 09:44:09 route_main.go:26: sql: no rows in result set
+2024/08/29 09:45:15 users.go:100: Creating session for UserID: 1 with UUID: f4f958a4-659f-11ef-9cf2-26861e157bca
+2024/08/29 09:45:15 users.go:127: Session created with UserID: 1, UUID: 87470d26-6598-11ef-a1a5-26861e157bca
+2024/08/29 09:45:15 route_main.go:24: 
+2024/08/29 09:45:15 route_main.go:26: sql: no rows in result set
+2024/08/29 09:45:15 route_main.go:24: 
+2024/08/29 09:45:15 route_main.go:26: sql: no rows in result set
+2024/08/29 09:47:41 users.go:161: Session UserID: 0, UUID: 87470d26-6598-11ef-a1a5-26861e157bca
+2024/08/29 09:47:41 users.go:174: No user found for UserID: 0
+2024/08/29 09:47:41 route_main.go:24: 
+2024/08/29 09:47:41 route_main.go:26: no user found for the session
+2024/08/29 09:47:41 users.go:161: Session UserID: 0, UUID: 87470d26-6598-11ef-a1a5-26861e157bca
+2024/08/29 09:47:41 users.go:174: No user found for UserID: 0
+2024/08/29 09:47:41 route_main.go:24: 
+2024/08/29 09:47:41 route_main.go:26: no user found for the session
+2024/08/29 09:50:10 route_main.go:24: 
+2024/08/29 09:50:10 route_main.go:26: sql: no rows in result set
+2024/08/29 09:50:10 route_main.go:24: 
+2024/08/29 09:50:10 route_main.go:26: sql: no rows in result set
+2024/08/29 09:57:55 users.go:145: Session checked: UserID: 1, UUID: 87470d26-6598-11ef-a1a5-26861e157bca
+2024/08/29 09:57:55 route_main.go:24: 拓真
+2024/08/29 09:57:55 users.go:145: Session checked: UserID: 1, UUID: 87470d26-6598-11ef-a1a5-26861e157bca
+2024/08/29 09:57:55 users.go:145: Session checked: UserID: 1, UUID: 87470d26-6598-11ef-a1a5-26861e157bca
+2024/08/29 09:57:55 route_main.go:24: 拓真
+2024/08/29 09:58:17 route_main.go:24: 
+2024/08/29 09:58:17 route_main.go:26: sql: no rows in result set
+2024/08/29 09:58:17 route_main.go:24: 
+2024/08/29 09:58:17 route_main.go:26: sql: no rows in result set
+2024/08/29 09:59:20 route_main.go:24: 
+2024/08/29 09:59:20 route_main.go:26: sql: no rows in result set
+2024/08/29 09:59:21 route_main.go:24: 
+2024/08/29 09:59:21 route_main.go:26: sql: no rows in result set
+2024/08/29 10:00:23 route_main.go:24: 拓真
+2024/08/29 10:00:23 route_main.go:24: 拓真
+2024/08/29 10:24:58 route_main.go:24: 拓真
+2024/08/29 10:24:58 route_main.go:24: 拓真
+2024/08/29 10:25:00 route_main.go:24: 拓真
+2024/08/29 10:25:00 route_main.go:24: 拓真
+2024/08/29 10:25:01 route_main.go:24: 拓真
+2024/08/29 10:25:01 route_main.go:24: 拓真
+2024/08/29 10:25:02 route_main.go:24: 拓真
+2024/08/29 10:25:02 route_main.go:24: 拓真
+2024/08/29 10:25:03 route_main.go:24: 拓真
+2024/08/29 10:25:03 route_main.go:24: 拓真
+2024/08/29 10:25:03 route_main.go:24: 拓真
+2024/08/29 10:25:03 route_main.go:24: 拓真
+2024/08/29 10:25:03 route_main.go:24: 拓真
+2024/08/29 10:25:03 route_main.go:24: 拓真
+2024/08/29 10:25:04 route_main.go:24: 拓真
+2024/08/29 10:25:04 route_main.go:24: 拓真
+2024/08/29 10:25:42 route_main.go:24: 拓真
+2024/08/29 10:25:42 route_main.go:24: 拓真
+2024/08/29 10:25:43 route_main.go:24: 拓真
+2024/08/29 10:25:43 route_main.go:24: 拓真
+2024/08/29 10:26:29 route_main.go:24: 拓真
+2024/08/29 10:26:29 route_main.go:24: 拓真
+2024/08/29 10:26:30 route_main.go:24: 拓真
+2024/08/29 10:26:30 route_main.go:24: 拓真
+2024/08/29 10:29:00 route_main.go:24: 拓真
+2024/08/29 10:29:00 route_main.go:24: 拓真
+2024/08/29 10:29:02 server.go:3413: http: panic serving [::1]:50384: template: todo_new.html:12: unexpected EOF
+goroutine 6 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1049c9280?, 0xc000016ab0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x104a332c0, 0xc000174b60}, {0x0, 0x0}, {0xc000031aa8?, 0x0?, 0x1045270c0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.todoNew({0x104a332c0, 0xc000174b60}, 0xc00012d9e0)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:39 +0xd7
+net/http.HandlerFunc.ServeHTTP(0x104cb53e0?, {0x104a332c0?, 0xc000174b60?}, 0x1046f8c1a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1044bb939?, {0x104a332c0, 0xc000174b60}, 0xc00012d9e0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000186030?}, {0x104a332c0?, 0xc000174b60?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00015e090, {0x104a339e0, 0xc00007f470})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 10:29:02 server.go:3413: http: panic serving [::1]:50385: template: todo_new.html:12: unexpected EOF
+goroutine 7 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1049c9280?, 0xc000016ca0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x104a332c0, 0xc000174d20}, {0x0, 0x0}, {0xc000143aa8?, 0x0?, 0x1045270c0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.todoNew({0x104a332c0, 0xc000174d20}, 0xc00012c900)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:39 +0xd7
+net/http.HandlerFunc.ServeHTTP(0x104cb53e0?, {0x104a332c0?, 0xc000174d20?}, 0x1046f8c1a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1044bb939?, {0x104a332c0, 0xc000174d20}, 0xc00012c900)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00007f5c0?}, {0x104a332c0?, 0xc000174d20?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00015e120, {0x104a339e0, 0xc00007f470})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 10:29:02 server.go:3413: http: panic serving [::1]:50386: template: todo_new.html:12: unexpected EOF
+goroutine 12 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1049c9280?, 0xc000016ea0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x104a332c0, 0xc000174ee0}, {0x0, 0x0}, {0xc000143aa8?, 0x0?, 0x1045270c0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.todoNew({0x104a332c0, 0xc000174ee0}, 0xc000212b40)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:39 +0xd7
+net/http.HandlerFunc.ServeHTTP(0x104cb53e0?, {0x104a332c0?, 0xc000174ee0?}, 0x1046f8c1a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1044bb939?, {0x104a332c0, 0xc000174ee0}, 0xc000212b40)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00020fe30?}, {0x104a332c0?, 0xc000174ee0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00015e870, {0x104a339e0, 0xc00007f470})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 10:29:03 server.go:3413: http: panic serving [::1]:50387: template: todo_new.html:12: unexpected EOF
+goroutine 14 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1049c9280?, 0xc0000170a0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x104a332c0, 0xc0001750a0}, {0x0, 0x0}, {0xc000143aa8?, 0x0?, 0x1045270c0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.todoNew({0x104a332c0, 0xc0001750a0}, 0xc000213320)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:39 +0xd7
+net/http.HandlerFunc.ServeHTTP(0x104cb53e0?, {0x104a332c0?, 0xc0001750a0?}, 0x1046f8c1a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1044bb939?, {0x104a332c0, 0xc0001750a0}, 0xc000213320)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00023c6f0?}, {0x104a332c0?, 0xc0001750a0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00015eab0, {0x104a339e0, 0xc00007f470})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 10:29:08 server.go:3413: http: panic serving [::1]:50388: template: todo_new.html:12: unexpected EOF
+goroutine 16 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1049c9280?, 0xc0000981f0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x104a332c0, 0xc0000ce000}, {0x0, 0x0}, {0xc0000d9aa8?, 0x0?, 0x1045270c0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.todoNew({0x104a332c0, 0xc0000ce000}, 0xc000213b00)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:39 +0xd7
+net/http.HandlerFunc.ServeHTTP(0x104cb53e0?, {0x104a332c0?, 0xc0000ce000?}, 0x1046f8c1a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1044bb939?, {0x104a332c0, 0xc0000ce000}, 0xc000213b00)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00023cf30?}, {0x104a332c0?, 0xc0000ce000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00015ecf0, {0x104a339e0, 0xc00007f470})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 10:29:08 server.go:3413: http: panic serving [::1]:50389: template: todo_new.html:12: unexpected EOF
+goroutine 19 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1049c9280?, 0xc0000983e0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x104a332c0, 0xc0000ce1c0}, {0x0, 0x0}, {0xc0000d9aa8?, 0x0?, 0x1045270c0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.todoNew({0x104a332c0, 0xc0000ce1c0}, 0xc0000b6000)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:39 +0xd7
+net/http.HandlerFunc.ServeHTTP(0x104cb53e0?, {0x104a332c0?, 0xc0000ce1c0?}, 0x1046f8c1a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1044bb939?, {0x104a332c0, 0xc0000ce1c0}, 0xc0000b6000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a2090?}, {0x104a332c0?, 0xc0000ce1c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0000a6000, {0x104a339e0, 0xc00007f470})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 10:29:08 server.go:3413: http: panic serving [::1]:50390: template: todo_new.html:12: unexpected EOF
+goroutine 50 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1049c9280?, 0xc0000172b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+html/template.Must(...)
+	/usr/local/go/src/html/template/template.go:368
+todo_app/app/controllers.generateHTML({0x104a332c0, 0xc000175260}, {0x0, 0x0}, {0xc000143aa8?, 0x0?, 0x1045270c0?})
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:18 +0x23a
+todo_app/app/controllers.todoNew({0x104a332c0, 0xc000175260}, 0xc000213c20)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/route_main.go:39 +0xd7
+net/http.HandlerFunc.ServeHTTP(0x104cb53e0?, {0x104a332c0?, 0xc000175260?}, 0x1046f8c1a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1044bb939?, {0x104a332c0, 0xc000175260}, 0xc000213c20)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00023cff0?}, {0x104a332c0?, 0xc000175260?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc00015ed80, {0x104a339e0, 0xc00007f470})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 10:30:17 route_main.go:24: 拓真
+2024/08/29 10:38:21 route_main.go:24: 拓真
+2024/08/29 10:38:25 route_main.go:24: 拓真
+2024/08/29 10:39:09 route_main.go:24: 拓真
+2024/08/29 10:39:09 route_main.go:24: 拓真
+2024/08/29 10:39:11 route_main.go:24: 拓真
+2024/08/29 10:39:11 route_main.go:24: 拓真
+2024/08/29 10:39:13 route_main.go:24: 拓真
+2024/08/29 10:39:24 route_main.go:24: 拓真
+2024/08/29 10:39:26 route_main.go:24: 拓真
+2024/08/29 10:39:26 route_main.go:24: 拓真
+2024/08/29 10:42:12 route_main.go:24: 拓真
+2024/08/29 10:42:12 route_main.go:24: 拓真
+2024/08/29 10:42:13 route_main.go:24: 拓真
+2024/08/29 10:42:13 route_main.go:24: 拓真
+2024/08/29 10:42:54 route_main.go:24: 拓真
+2024/08/29 10:42:54 route_main.go:24: 拓真
+2024/08/29 10:46:55 route_main.go:24: 拓真
+2024/08/29 10:46:56 route_main.go:24: 拓真
+2024/08/29 10:46:56 route_main.go:24: 拓真
+2024/08/29 10:46:56 route_main.go:24: 拓真
+2024/08/29 10:46:57 route_main.go:24: 拓真
+2024/08/29 10:46:57 route_main.go:24: 拓真
+2024/08/29 10:46:57 route_main.go:24: 拓真
+2024/08/29 10:46:57 route_main.go:24: 拓真
+2024/08/29 10:46:58 route_main.go:24: 拓真
+2024/08/29 10:46:58 route_main.go:24: 拓真
+2024/08/29 13:01:30 route_main.go:24: 拓真
+2024/08/29 13:01:30 route_main.go:24: 拓真
+2024/08/29 13:01:30 route_main.go:24: 拓真
+2024/08/29 13:01:30 route_main.go:24: 拓真
+2024/08/29 13:01:31 route_main.go:24: 拓真
+2024/08/29 13:01:31 route_main.go:24: 拓真
+2024/08/29 13:01:35 route_main.go:24: 拓真
+2024/08/29 13:01:37 route_main.go:24: 拓真
+2024/08/29 13:01:37 route_main.go:24: 拓真
+2024/08/29 13:07:36 route_main.go:35: Todos: [{1  1 2024-08-29 10:38:25.150769 +0900 +0900} {2  1 2024-08-29 10:39:26.269542 +0900 +0900} {3  1 2024-08-29 13:01:37.438826 +0900 +0900}]
+2024/08/29 13:07:36 route_main.go:35: Todos: [{1  1 2024-08-29 10:38:25.150769 +0900 +0900} {2  1 2024-08-29 10:39:26.269542 +0900 +0900} {3  1 2024-08-29 13:01:37.438826 +0900 +0900}]
+2024/08/29 13:07:38 route_main.go:35: Todos: [{1  1 2024-08-29 10:38:25.150769 +0900 +0900} {2  1 2024-08-29 10:39:26.269542 +0900 +0900} {3  1 2024-08-29 13:01:37.438826 +0900 +0900}]
+2024/08/29 13:07:38 route_main.go:35: Todos: [{1  1 2024-08-29 10:38:25.150769 +0900 +0900} {2  1 2024-08-29 10:39:26.269542 +0900 +0900} {3  1 2024-08-29 13:01:37.438826 +0900 +0900}]
+2024/08/29 13:08:46 route_main.go:24: 拓真
+2024/08/29 13:08:46 route_main.go:24: 拓真
+2024/08/29 13:08:48 route_main.go:24: 拓真
+2024/08/29 13:08:48 route_main.go:24: 拓真
+2024/08/29 13:08:48 route_main.go:24: 拓真
+2024/08/29 13:08:48 route_main.go:24: 拓真
+2024/08/29 13:09:04 route_main.go:24: 拓真
+2024/08/29 13:09:06 route_main.go:24: 拓真
+2024/08/29 13:09:06 route_main.go:24: 拓真
+2024/08/29 13:44:14 route_main.go:25: 拓真
+2024/08/29 13:44:14 route_main.go:25: 拓真
+2024/08/29 13:44:16 server.go:3413: http: panic serving [::1]:60196: runtime error: index out of range [2] with length 2
+goroutine 23 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1007380e0?, 0xc000122048?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.ParseURL.func2({0x100760420, 0xc000130000}, 0xc000110000)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:44 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x1009e23e0?, {0x100760420?, 0xc000130000?}, 0x10042505a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1001e7d79?, {0x100760420, 0xc000130000}, 0xc000110000)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0000a5680?}, {0x100760420?, 0xc000130000?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000208120, {0x100760b50, 0xc0000a5530})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 13:44:16 server.go:3413: http: panic serving [::1]:60195: runtime error: index out of range [2] with length 2
+goroutine 22 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1007380e0?, 0xc0001220c0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.ParseURL.func2({0x100760420, 0xc0001301c0}, 0xc000110120)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:44 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x1009e23e0?, {0x100760420?, 0xc0001301c0?}, 0x10042505a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1001e7d79?, {0x100760420, 0xc0001301c0}, 0xc000110120)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00019e030?}, {0x100760420?, 0xc0001301c0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000208090, {0x100760b50, 0xc0000a5530})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 13:44:16 server.go:3413: http: panic serving [::1]:60210: runtime error: index out of range [2] with length 2
+goroutine 52 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1007380e0?, 0xc000122120?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.ParseURL.func2({0x100760420, 0xc000130380}, 0xc000110240)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:44 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x1009e23e0?, {0x100760420?, 0xc000130380?}, 0x10042505a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1001e7d79?, {0x100760420, 0xc000130380}, 0xc000110240)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001181b0?}, {0x100760420?, 0xc000130380?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000114120, {0x100760b50, 0xc0000a5530})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 13:44:17 server.go:3413: http: panic serving [::1]:60216: runtime error: index out of range [2] with length 2
+goroutine 27 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1007380e0?, 0xc0000b43a8?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.ParseURL.func2({0x100760420, 0xc000220e00}, 0xc0000d5b00)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:44 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x1009e23e0?, {0x100760420?, 0xc000220e00?}, 0x10042505a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1001e7d79?, {0x100760420, 0xc000220e00}, 0xc0000d5b00)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000244ed0?}, {0x100760420?, 0xc000220e00?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0002087e0, {0x100760b50, 0xc0000a5530})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 13:44:23 server.go:3413: http: panic serving [::1]:60217: runtime error: index out of range [2] with length 2
+goroutine 29 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1007380e0?, 0xc0000b4408?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.ParseURL.func2({0x100760420, 0xc000220fc0}, 0xc0000d5c20)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:44 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x1009e23e0?, {0x100760420?, 0xc000220fc0?}, 0x10042505a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1001e7d79?, {0x100760420, 0xc000220fc0}, 0xc0000d5c20)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000245020?}, {0x100760420?, 0xc000220fc0?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000208990, {0x100760b50, 0xc0000a5530})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 13:44:23 server.go:3413: http: panic serving [::1]:60239: runtime error: index out of range [2] with length 2
+goroutine 31 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1007380e0?, 0xc0000b4468?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.ParseURL.func2({0x100760420, 0xc000221180}, 0xc0000d5d40)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:44 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x1009e23e0?, {0x100760420?, 0xc000221180?}, 0x10042505a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1001e7d79?, {0x100760420, 0xc000221180}, 0xc0000d5d40)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc000245170?}, {0x100760420?, 0xc000221180?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000208b40, {0x100760b50, 0xc0000a5530})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 13:44:53 server.go:3413: http: panic serving [::1]:60240: runtime error: index out of range [2] with length 2
+goroutine 56 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1007380e0?, 0xc0001221b0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.ParseURL.func2({0x100760420, 0xc000130620}, 0xc0001105a0)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:44 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x1009e23e0?, {0x100760420?, 0xc000130620?}, 0x10042505a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1001e7d79?, {0x100760420, 0xc000130620}, 0xc0001105a0)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0001184b0?}, {0x100760420?, 0xc000130620?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000114510, {0x100760b50, 0xc0000a5530})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 13:44:53 server.go:3413: http: panic serving [::1]:60361: runtime error: index out of range [2] with length 2
+goroutine 33 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1007380e0?, 0xc0001ae1e0?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.ParseURL.func2({0x100760420, 0xc0001c4460}, 0xc0000d5e60)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:44 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x1009e23e0?, {0x100760420?, 0xc0001c4460?}, 0x10042505a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1001e7d79?, {0x100760420, 0xc0001c4460}, 0xc0000d5e60)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc0002452c0?}, {0x100760420?, 0xc0001c4460?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc000208cf0, {0x100760b50, 0xc0000a5530})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 13:44:53 server.go:3413: http: panic serving [::1]:60362: runtime error: index out of range [2] with length 2
+goroutine 37 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1898 +0xbe
+panic({0x1007380e0?, 0xc0001ae240?})
+	/usr/local/go/src/runtime/panic.go:770 +0x132
+todo_app/app/controllers.StartMainServer.ParseURL.func2({0x100760420, 0xc0001c4620}, 0xc0001ad320)
+	/Users/Izumi.Takuma/go/src/golang_udemy/todo_app/app/controllers/server.go:44 +0xcf
+net/http.HandlerFunc.ServeHTTP(0x1009e23e0?, {0x100760420?, 0xc0001c4620?}, 0x10042505a?)
+	/usr/local/go/src/net/http/server.go:2166 +0x29
+net/http.(*ServeMux).ServeHTTP(0x1001e7d79?, {0x100760420, 0xc0001c4620}, 0xc0001ad320)
+	/usr/local/go/src/net/http/server.go:2683 +0x1ad
+net/http.serverHandler.ServeHTTP({0xc00019f8c0?}, {0x100760420?, 0xc0001c4620?}, 0x6?)
+	/usr/local/go/src/net/http/server.go:3137 +0x8e
+net/http.(*conn).serve(0xc0001b05a0, {0x100760b50, 0xc0000a5530})
+	/usr/local/go/src/net/http/server.go:2039 +0x5e8
+created by net/http.(*Server).Serve in goroutine 1
+	/usr/local/go/src/net/http/server.go:3285 +0x4b4
+2024/08/29 13:48:19 route_main.go:25: 拓真
+2024/08/29 13:48:21 route_main.go:25: 拓真
+2024/08/29 13:48:21 route_main.go:25: 拓真
+2024/08/29 13:48:23 route_main.go:25: 拓真
+2024/08/29 13:48:27 route_main.go:25: 拓真
+2024/08/29 13:48:27 route_main.go:25: 拓真
+2024/08/29 13:59:37 route_main.go:25: 拓真
+2024/08/29 13:59:37 route_main.go:25: 拓真
+2024/08/29 13:59:37 route_main.go:25: 拓真
+2024/08/29 13:59:37 route_main.go:25: 拓真
+2024/08/29 13:59:39 route_main.go:25: 拓真
+2024/08/29 13:59:42 route_main.go:25: 拓真
+2024/08/29 13:59:42 route_main.go:25: 拓真
+2024/08/29 13:59:44 route_main.go:25: 拓真
+2024/08/29 13:59:47 route_main.go:25: 拓真
+2024/08/29 13:59:47 route_main.go:25: 拓真
+2024/08/29 13:59:55 route_main.go:25: 拓真
+2024/08/29 13:59:57 route_main.go:25: 拓真
+2024/08/29 13:59:57 route_main.go:25: 拓真
+2024/08/29 13:59:58 route_main.go:25: 拓真
+2024/08/29 14:00:01 route_main.go:25: 拓真
+2024/08/29 14:00:01 route_main.go:25: 拓真
+2024/08/29 14:00:01 route_main.go:25: 拓真
+2024/08/29 14:00:03 route_main.go:25: 拓真
+2024/08/29 14:00:03 route_main.go:25: 拓真
+2024/08/29 14:00:05 route_main.go:25: 拓真
+2024/08/29 14:00:06 route_main.go:25: 拓真
+2024/08/29 14:00:06 route_main.go:25: 拓真
+2024/08/29 14:00:07 route_main.go:25: 拓真
+2024/08/29 14:00:09 route_main.go:25: 拓真
+2024/08/29 14:00:09 route_main.go:25: 拓真
+2024/08/29 14:13:15 route_main.go:25: 拓真
+2024/08/29 14:13:15 route_main.go:25: 拓真
+2024/08/29 14:13:16 route_main.go:25: 拓真
+2024/08/29 14:13:16 route_main.go:25: 拓真
+2024/08/29 14:13:17 route_main.go:25: 拓真
+2024/08/29 14:13:17 route_main.go:25: 拓真
+2024/08/29 14:13:18 route_main.go:25: 拓真
+2024/08/29 14:13:18 route_main.go:25: 拓真
+2024/08/29 14:13:19 route_main.go:25: 拓真
+2024/08/29 14:13:19 route_main.go:25: 拓真
+2024/08/29 14:13:19 route_main.go:25: 拓真
+2024/08/29 14:13:19 route_main.go:25: 拓真
+2024/08/29 14:13:20 route_main.go:25: 拓真
+2024/08/29 14:13:20 route_main.go:25: 拓真
+2024/08/29 14:13:21 route_main.go:25: 拓真
+2024/08/29 14:13:21 route_main.go:25: 拓真
+2024/08/29 14:13:21 route_main.go:25: 拓真
+2024/08/29 14:13:21 route_main.go:25: 拓真
+2024/08/29 14:13:22 route_main.go:25: 拓真
+2024/08/29 14:13:22 route_main.go:25: 拓真
+2024/08/29 14:13:24 route_main.go:25: 拓真
+2024/08/29 14:13:24 route_main.go:25: 拓真
+2024/08/29 14:13:25 route_main.go:25: 拓真
+2024/08/29 14:13:25 route_main.go:25: 拓真
+2024/08/29 14:13:26 route_main.go:25: 拓真
+2024/08/29 14:13:26 route_main.go:25: 拓真
+2024/08/29 14:13:28 route_main.go:25: 拓真
+2024/08/29 14:13:29 route_main.go:25: 拓真
+2024/08/29 14:13:29 route_main.go:25: 拓真
+2024/08/29 14:13:33 route_main.go:25: 拓真
+2024/08/29 14:13:33 route_main.go:25: 拓真
+2024/08/29 14:13:36 route_main.go:25: 拓真
+2024/08/29 14:13:39 route_main.go:25: 拓真
+2024/08/29 14:13:39 route_main.go:25: 拓真
+2024/08/29 14:13:41 route_main.go:25: 拓真
+2024/08/29 14:13:41 route_main.go:25: 拓真
+2024/08/29 14:15:35 route_main.go:25: 拓真
+2024/08/29 14:15:35 route_main.go:25: 拓真
+2024/08/29 14:15:37 route_main.go:25: 拓真
+2024/08/29 14:15:37 route_main.go:25: 拓真
+2024/08/29 14:15:38 route_main.go:25: 拓真
+2024/08/29 14:15:38 route_main.go:25: 拓真
+2024/08/29 14:15:38 route_main.go:25: 拓真
+2024/08/29 14:15:38 route_main.go:25: 拓真
+2024/08/29 14:15:38 route_main.go:25: 拓真
+2024/08/29 14:15:38 route_main.go:25: 拓真
+2024/08/29 14:15:38 route_main.go:25: 拓真
+2024/08/29 14:15:38 route_main.go:25: 拓真
+2024/08/29 14:15:39 route_main.go:25: 拓真
+2024/08/29 14:15:39 route_main.go:25: 拓真
+2024/08/29 14:15:39 route_main.go:25: 拓真
+2024/08/29 14:15:39 route_main.go:25: 拓真
+2024/08/29 14:15:39 route_main.go:25: 拓真
+2024/08/29 14:15:39 route_main.go:25: 拓真
+2024/08/29 14:15:39 route_main.go:25: 拓真
+2024/08/29 14:15:39 route_main.go:25: 拓真
+2024/08/29 14:15:39 route_main.go:25: 拓真
+2024/08/29 14:15:39 route_main.go:25: 拓真
+2024/08/29 14:15:39 route_main.go:25: 拓真
+2024/08/29 14:15:39 route_main.go:25: 拓真
+2024/08/29 14:15:40 route_main.go:25: 拓真
+2024/08/29 14:15:40 route_main.go:25: 拓真
+2024/08/29 14:15:40 route_main.go:25: 拓真
+2024/08/29 14:15:40 route_main.go:25: 拓真
+2024/08/29 14:16:09 route_main.go:25: 拓真
+2024/08/29 14:16:09 route_main.go:25: 拓真
+2024/08/29 14:16:10 route_main.go:25: 拓真
+2024/08/29 14:16:10 route_main.go:25: 拓真
+2024/08/29 14:16:11 route_main.go:25: 拓真
+2024/08/29 14:16:11 route_main.go:25: 拓真
+2024/08/29 14:16:11 route_main.go:25: 拓真
+2024/08/29 14:16:12 route_main.go:25: 拓真
+2024/08/29 14:16:12 route_main.go:25: 拓真
+2024/08/29 14:16:12 route_main.go:25: 拓真
+2024/08/29 14:16:26 route_main.go:25: 拓真
+2024/08/29 14:16:26 route_main.go:25: 拓真
+2024/08/29 14:16:39 route_main.go:25: 拓真
+2024/08/29 14:16:39 route_main.go:25: 拓真
+2024/08/29 14:16:46 route_main.go:25: 拓真
+2024/08/29 14:16:46 route_main.go:25: 拓真
+2024/08/29 14:16:47 route_main.go:25: 拓真
+2024/08/29 14:16:47 route_main.go:25: 拓真
+2024/08/29 14:16:47 route_main.go:25: 拓真
+2024/08/29 14:16:47 route_main.go:25: 拓真
+2024/08/29 14:16:48 route_main.go:25: 拓真
+2024/08/29 14:16:48 route_main.go:25: 拓真
+2024/08/29 14:16:48 route_main.go:25: 拓真
+2024/08/29 14:16:48 route_main.go:25: 拓真
+2024/08/29 14:16:49 route_main.go:25: 拓真
+2024/08/29 14:16:49 route_main.go:25: 拓真
+2024/08/29 14:16:49 route_main.go:25: 拓真
+2024/08/29 14:16:50 route_main.go:25: 拓真
+2024/08/29 14:42:48 route_main.go:25: 拓真
+2024/08/29 14:42:48 route_main.go:25: 拓真
+2024/08/29 14:42:49 route_main.go:25: 拓真
+2024/08/29 14:42:49 route_main.go:25: 拓真
+2024/08/29 14:42:49 route_main.go:25: 拓真
+2024/08/29 14:42:49 route_main.go:25: 拓真
+2024/08/29 14:44:16 route_main.go:25: 拓真
+2024/08/29 14:44:16 route_main.go:25: 拓真
+2024/08/29 14:44:18 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:18 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:18 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:18 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:18 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:18 route_main.go:25: 拓真
+2024/08/29 14:44:18 route_main.go:25: 拓真
+2024/08/29 14:44:19 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:19 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:19 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:19 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:19 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:19 route_main.go:25: 拓真
+2024/08/29 14:44:19 route_main.go:25: 拓真
+2024/08/29 14:44:20 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:20 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:20 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:20 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:20 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:20 route_main.go:25: 拓真
+2024/08/29 14:44:20 route_main.go:25: 拓真
+2024/08/29 14:44:24 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:24 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:24 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:24 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:24 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:24 route_main.go:25: 拓真
+2024/08/29 14:44:24 route_main.go:25: 拓真
+2024/08/29 14:44:26 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:26 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:26 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:26 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:26 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:26 route_main.go:25: 拓真
+2024/08/29 14:44:26 route_main.go:25: 拓真
+2024/08/29 14:44:27 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:27 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:27 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:27 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:27 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:27 route_main.go:25: 拓真
+2024/08/29 14:44:27 route_main.go:25: 拓真
+2024/08/29 14:44:27 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:27 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:27 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:27 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:27 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:27 route_main.go:25: 拓真
+2024/08/29 14:44:27 route_main.go:25: 拓真
+2024/08/29 14:44:28 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:28 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:28 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:28 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:28 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:28 route_main.go:25: 拓真
+2024/08/29 14:44:28 route_main.go:25: 拓真
+2024/08/29 14:44:28 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:28 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:28 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:28 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:28 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:28 route_main.go:25: 拓真
+2024/08/29 14:44:28 route_main.go:25: 拓真
+2024/08/29 14:44:29 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:29 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:29 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:29 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:29 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:29 route_main.go:25: 拓真
+2024/08/29 14:44:29 route_main.go:25: 拓真
+2024/08/29 14:44:29 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:29 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:29 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:29 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:29 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:29 route_main.go:25: 拓真
+2024/08/29 14:44:29 route_main.go:25: 拓真
+2024/08/29 14:44:30 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:30 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:30 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:30 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:30 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:30 route_main.go:25: 拓真
+2024/08/29 14:44:30 route_main.go:25: 拓真
+2024/08/29 14:44:30 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:30 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:30 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:30 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:30 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:30 route_main.go:25: 拓真
+2024/08/29 14:44:31 route_main.go:25: 拓真
+2024/08/29 14:44:31 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:31 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:31 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:31 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:31 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:31 route_main.go:25: 拓真
+2024/08/29 14:44:31 route_main.go:25: 拓真
+2024/08/29 14:44:56 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:56 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:56 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:56 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:56 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:56 route_main.go:25: 拓真
+2024/08/29 14:44:56 route_main.go:25: 拓真
+2024/08/29 14:44:56 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:56 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:56 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:56 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:56 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:56 route_main.go:25: 拓真
+2024/08/29 14:44:56 route_main.go:25: 拓真
+2024/08/29 14:44:57 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:57 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:57 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:57 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:57 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:57 route_main.go:25: 拓真
+2024/08/29 14:44:57 route_main.go:25: 拓真
+2024/08/29 14:44:57 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:57 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:57 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:57 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:57 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:57 route_main.go:25: 拓真
+2024/08/29 14:44:57 route_main.go:25: 拓真
+2024/08/29 14:44:57 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:57 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:57 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:57 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:57 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:57 route_main.go:25: 拓真
+2024/08/29 14:44:57 route_main.go:25: 拓真
+2024/08/29 14:44:57 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:57 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:57 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:57 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:57 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:57 route_main.go:25: 拓真
+2024/08/29 14:44:57 route_main.go:25: 拓真
+2024/08/29 14:44:58 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:58 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:58 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:58 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:58 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:58 route_main.go:25: 拓真
+2024/08/29 14:44:58 route_main.go:25: 拓真
+2024/08/29 14:44:58 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:58 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:58 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:58 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:58 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:58 route_main.go:25: 拓真
+2024/08/29 14:44:58 route_main.go:25: 拓真
+2024/08/29 14:44:58 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:58 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:58 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:58 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:58 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:58 route_main.go:25: 拓真
+2024/08/29 14:44:58 route_main.go:25: 拓真
+2024/08/29 14:44:59 route_main.go:99: todoDelete called with ID: 2
+2024/08/29 14:44:59 route_main.go:107: Session retrieved: {6 87470d26-6598-11ef-a1a5-26861e157bca takuma373721@gmail.com 1 2024-08-29 08:52:05.079132 +0900 +0900}
+2024/08/29 14:44:59 route_main.go:115: User retrieved: {1 cc31a1a6-64e1-11ef-8dfc-26861e157bca 拓真 takuma373721@gmail.com  2024-08-28 11:04:02.800257 +0900 +0900 []}
+2024/08/29 14:44:59 route_main.go:123: Todo retrieved: {2 fvv 1 2024-08-29 10:39:26.269542 +0900 +0900}
+2024/08/29 14:44:59 route_main.go:130: Todo deleted successfully
+2024/08/29 14:44:59 route_main.go:25: 拓真
+2024/08/29 14:44:59 route_main.go:25: 拓真
+2024/08/29 14:48:44 route_main.go:25: 拓真
+2024/08/29 14:48:45 route_main.go:25: 拓真
+2024/08/29 14:48:47 route_main.go:25: 拓真
+2024/08/29 14:48:47 route_main.go:25: 拓真
+2024/08/29 14:48:53 route_main.go:25: 拓真
+2024/08/29 14:48:53 route_main.go:25: 拓真
+2024/08/29 14:49:06 route_main.go:25: 拓真
+2024/08/29 14:49:06 route_main.go:25: 拓真
+2024/08/29 14:49:48 route_main.go:25: 拓真
+2024/08/29 14:49:48 route_main.go:25: 拓真
+2024/08/29 14:49:48 route_main.go:25: 拓真
+2024/08/29 14:49:48 route_main.go:25: 拓真
+2024/08/29 14:49:49 route_main.go:25: 拓真
+2024/08/29 14:49:49 route_main.go:25: 拓真
+2024/08/29 14:49:50 route_main.go:25: 拓真
+2024/08/29 14:49:50 route_main.go:25: 拓真
